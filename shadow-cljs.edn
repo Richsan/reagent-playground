@@ -1,0 +1,13 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/"
+  "test/"]
+
+ :dependencies
+ [[reagent "1.1.1"]
+  [arttuka/reagent-material-ui "5.6.2-1"]]
+
+ :dev-http {8080 "public"}
+ :builds
+ {:frontend {:target  :browser
+             :modules {:main {:init-fn reagent-playground.app/init}}}}}
